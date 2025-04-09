@@ -1,0 +1,7 @@
+streamlit
+konlpy
+matplotlib
+pandas
+collections
+request
+wordcloud
