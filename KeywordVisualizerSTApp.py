@@ -48,7 +48,7 @@ if uploaded_file and analyze_btn:
         corpus = list(df[column_name].dropna())
 
         tokenizer = RegexTokenizer()
-        stopwords = ['등', '및', '수', '의', '이', '를', '</', '...', '(<)', '>)', '>)']
+        stopwords = ['등', '및', '수', '의', '이', '를', '</', '...', '(<', '>)', '>)']
         counter = tm.analize_word_freq(corpus, tokenizer, stopwords)
 
         if draw_bar:
