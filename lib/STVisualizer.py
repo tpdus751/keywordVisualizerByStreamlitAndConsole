@@ -12,6 +12,11 @@ def visualize_barchart_streamlit(counter, title, xlabel, ylabel, top_n=20):
     word_list = [word for word, _ in most_common]
     count_list = [count for _, count in most_common]
 
+    # 한글 폰트 설정
+    font_path = 'assets/malgun.ttf'
+    font_name = font_manager.FontProperties(fname=font_path).get_name()
+    rc('font', family=font_name)
+
     fig, ax = plt.subplots()
     ax.barh(word_list[::-1], count_list[::-1])
     ax.set_title(title)
