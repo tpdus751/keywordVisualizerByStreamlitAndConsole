@@ -7,7 +7,7 @@ Streamlit 웹 앱과 콘솔 기반 분석 프로그램이 함께 제공됩니다
 
 ## 🚀 배포 링크
 
-👉 [Streamlit에서 바로 실행하기]([https://keywordvisualizerbyapp-bm3n3c6tx9mknqemljxccb.streamlit.app/])  
+👉 [Streamlit에서 바로 실행하기](https://keywordvisualizerbyapp-bm3n3c6tx9mknqemljxccb.streamlit.app/)  
 ※ 앱 배포 플랫폼: **Streamlit Cloud**
 
 ---
