@@ -16,8 +16,8 @@ def tokenize_korean_corpus(corpus_list, tokenizer, tags, stopwords):
     token_list = [token for token, tag in text_pos_list if tag in tags and token not in stopwords and len(token) > 1]
     return token_list
 
-def analize_word_freq(corpus_list, tokenizer, tags, stopwords):
-    token_list = tokenize_korean_corpus(corpus_list, tokenizer, tags, stopwords)
+def analize_word_freq(corpus_list, tokenizer, stopwords):
+    token_list = tokenize_korean_corpus(corpus_list, tokenizer, stopwords)
     counter = Counter(token_list)
     return counter
 

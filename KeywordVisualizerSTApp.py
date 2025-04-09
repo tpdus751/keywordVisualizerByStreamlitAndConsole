@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from collections import Counter
-from konlpy.tag import Okt
+from soynlp.tokenizer import RegexTokenizer
 
 import sys
 import os
@@ -47,10 +47,9 @@ if uploaded_file and analyze_btn:
         df = pd.read_csv(uploaded_file)
         corpus = list(df[column_name].dropna())
 
-        tokenizer = Okt().pos
-        tags = ['Noun']
+        tokenizer = RegexTokenizer()
         stopwords = ['등', '및', '수', '의', '이', '를']
-        counter = tm.analize_word_freq(corpus, tokenizer, tags, stopwords)
+        counter = tm.analize_word_freq(corpus, tokenizer, stopwords)
 
         if draw_bar:
             st.subheader("단어 빈도수 그래프")
