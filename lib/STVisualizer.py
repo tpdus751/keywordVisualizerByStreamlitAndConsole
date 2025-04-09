@@ -3,25 +3,28 @@
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import streamlit as st
-from matplotlib import font_manager, rc
+from matplotlib import font_manager
 
 
-@st.cache_data # 오래 걸리는 데이터분석 한번만 실행하려할 때(재분석X) 캐시 기능
+@st.cache_data
 def visualize_barchart_streamlit(counter, title, xlabel, ylabel, top_n=20):
     most_common = counter.most_common(top_n)
     word_list = [word for word, _ in most_common]
     count_list = [count for _, count in most_common]
 
-    # 한글 폰트 설정
+    # 폰트 직접 지정
     font_path = 'lib/assets/malgun.ttf'
-    font_name = font_manager.FontProperties(fname=font_path).get_name()
-    rc('font', family=font_name)
+    font_prop = font_manager.FontProperties(fname=font_path)
 
     fig, ax = plt.subplots()
     ax.barh(word_list[::-1], count_list[::-1])
-    ax.set_title(title)
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
+
+    ax.set_title(title, fontproperties=font_prop)
+    ax.set_xlabel(xlabel, fontproperties=font_prop)
+    ax.set_ylabel(ylabel, fontproperties=font_prop)
+
+    # y축 라벨도 폰트 적용
+    ax.set_yticklabels(word_list[::-1], fontproperties=font_prop)
 
     st.pyplot(fig)
 
