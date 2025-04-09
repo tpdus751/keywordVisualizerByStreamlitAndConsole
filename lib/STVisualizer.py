@@ -28,7 +28,7 @@ def visualize_barchart_streamlit(counter, title, xlabel, ylabel, top_n=20):
 
 @st.cache_data # 오래 걸리는 데이터분석 한번만 실행하려할 때(재분석X) 캐시 기능
 def visualize_wordcloud_streamlit(counter, max_words=50):
-    font_path = "c:/Windows/Fonts/malgun.ttf"
+    font_path = "lib/assets/malgun.ttf"
     wordcloud = WordCloud(
         font_path=font_path,
         width=600,
