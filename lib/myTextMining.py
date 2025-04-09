@@ -1,5 +1,4 @@
 from collections import Counter
-from konlpy.tag import Okt
 
 def load_corpus_from_csv(corpus_file, col_name):
     import pandas as pd
@@ -7,13 +6,13 @@ def load_corpus_from_csv(corpus_file, col_name):
     result_list = list(data_df[col_name])
     return result_list
 
-def tokenize_korean_corpus(corpus_list, tokenizer, tags, stopwords):
+def tokenize_korean_corpus(corpus_list, tokenizer,  stopwords):
     text_pos_list = []
     for sentence in corpus_list:
         text_pos = tokenizer(sentence)
         text_pos_list += text_pos # .extend() 도 가능
 
-    token_list = [token for token, tag in text_pos_list if tag in tags and token not in stopwords and len(token) > 1]
+    token_list = [token for token, tag in text_pos_list if token not in stopwords and len(token) > 1]
     return token_list
 
 def analize_word_freq(corpus_list, tokenizer, stopwords):
