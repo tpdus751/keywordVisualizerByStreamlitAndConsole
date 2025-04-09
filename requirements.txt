@@ -1,6 +1,6 @@
 streamlit
-konlpy
 matplotlib
 pandas
 requests
 wordcloud
+soynlp
