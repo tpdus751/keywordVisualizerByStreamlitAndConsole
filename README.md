@@ -50,7 +50,7 @@ streamlit run KeywordVisualizerSTApp.py
 ## 📷 실행 결과 화면
 
 🖥️ 기본 화면
-![기본 화면](./images/기본 화면.png)
+![기본 화면](./images/기본화면.png)
 
 📊 상위 키워드 막대그래프
 ![기본 화면](./images/막대차트.png)
