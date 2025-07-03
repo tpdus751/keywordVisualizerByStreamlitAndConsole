@@ -12,6 +12,13 @@ Streamlit 웹 앱과 콘솔 기반 분석 프로그램이 함께 제공됩니다
 
 ---
 
+## 💾 실행에 필요한 데이터
+
+- 이 프로젝트는 **한국어 뉴스 기사 데이터**가 담긴 CSV 파일을 필요로 합니다.
+- 파일: [Uploading LLM[Uploading LLM_naver_news.csv…]()
+_naver_news.csv…]()
+
+
 ## 📦 주요 기능
 
 - ✅ 뉴스 CSV 파일 업로드 및 분석
