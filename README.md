@@ -56,7 +56,7 @@ streamlit run KeywordVisualizerSTApp.py
       <sub>기본 화면</sub>
     </td>
     <td align="center">
-      <img src="./images/막대 차트.png" width="250"/><br/>
+      <img src="./images/막대차트.png" width="250"/><br/>
       <sub>상위 키워드 막대그래프</sub>
     </td>
     <td align="center">
