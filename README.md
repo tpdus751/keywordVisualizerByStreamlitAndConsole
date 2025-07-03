@@ -45,3 +45,23 @@ Streamlit 웹 앱과 콘솔 기반 분석 프로그램이 함께 제공됩니다
 # 가상환경 추천
 pip install -r requirements.txt
 streamlit run KeywordVisualizerSTApp.py
+```
+
+## 📷 실행 결과 화면
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="./images/upload_csv.png" width="250"/><br/>
+      <sub>CSV 업로드 화면</sub>
+    </td>
+    <td align="center">
+      <img src="./images/keyword_bar.png" width="250"/><br/>
+      <sub>상위 키워드 막대그래프</sub>
+    </td>
+    <td align="center">
+      <img src="./images/wordcloud.png" width="250"/><br/>
+      <sub>워드클라우드 시각화</sub>
+    </td>
+  </tr>
+</table>
