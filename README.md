@@ -49,19 +49,11 @@ streamlit run KeywordVisualizerSTApp.py
 
 ## 📷 실행 결과 화면
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="./images/기본 화면.png" width="250"/><br/>
-      <sub>기본 화면</sub>
-    </td>
-    <td align="center">
-      <img src="./images/막대차트.png" width="250"/><br/>
-      <sub>상위 키워드 막대그래프</sub>
-    </td>
-    <td align="center">
-      <img src="./images/워드클라우드.png" width="250"/><br/>
-      <sub>워드클라우드 시각화</sub>
-    </td>
-  </tr>
-</table>
+🖥️ 기본 화면
+![기본 화면](./images/기본 화면.png)
+
+📊 상위 키워드 막대그래프
+![기본 화면](./images/막대차트.png)
+
+☁️ 워드클라우드 시각화
+![기본 화면](./images/워드클라우드.png)
