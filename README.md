@@ -52,15 +52,15 @@ streamlit run KeywordVisualizerSTApp.py
 <table>
   <tr>
     <td align="center">
-      <img src="./images/upload_csv.png" width="250"/><br/>
-      <sub>CSV 업로드 화면</sub>
+      <img src="./images/기본 화면.png" width="250"/><br/>
+      <sub>기본 화면</sub>
     </td>
     <td align="center">
-      <img src="./images/keyword_bar.png" width="250"/><br/>
+      <img src="./images/막대 차트.png" width="250"/><br/>
       <sub>상위 키워드 막대그래프</sub>
     </td>
     <td align="center">
-      <img src="./images/wordcloud.png" width="250"/><br/>
+      <img src="./images/워드클라우드.png" width="250"/><br/>
       <sub>워드클라우드 시각화</sub>
     </td>
   </tr>
